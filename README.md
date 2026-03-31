@@ -1,5 +1,5 @@
 Triflux AI — 3D Neural Network Digit Recognition
-Triflux AI is a custom-built 3D neural network for handwritten digit recognition, trained on the MNIST dataset. Unlike traditional flat (2D) neural networks, Triflux processes data through a three-dimensional architecture, achieving ~99% accuracy on digit classification.
+Triflux AI is a custom-built 3D neural network for handwritten digit recognition, trained on the MNIST dataset. Unlike traditional flat (2D) neural networks, Triflux processes data through a three-dimensional architecture, achieving ~99% accuracy. XL is hitting up to 99% n digit classification.
 
 Models
 ModelFileSizeBest ForTriflux XLai_V9_trifulx-xl-gen5_MNIST.pyExtra LargeMaximum accuracyTriflux Mai_V9_trifulx-m-gen5_MNIST.pyMediumFaster inference, lower resource use
@@ -24,7 +24,7 @@ Accuracy: ~99%
 Getting Started
 Requirements
 bashpip install -r requirements.txt
-Run the XL model
+Run the XL model XL is hitting up to 99%
 bashpython ai_V9_trifulx-xl-gen5_MNIST.py
 Run the Medium model
 bashpython ai_V9_trifulx-m-gen5_MNIST.py
