@@ -1,40 +1,38 @@
-Author & Date
+Triflux AI — 3D Neural Network Digit Recognition
+Triflux AI is a custom-built 3D neural network for handwritten digit recognition, trained on the MNIST dataset. Unlike traditional flat (2D) neural networks, Triflux processes data through a three-dimensional architecture, achieving ~99% accuracy on digit classification.
 
-boki_231 — 2026-03-30
+Models
+ModelFileSizeBest ForTriflux XLai_V9_trifulx-xl-gen5_MNIST.pyExtra LargeMaximum accuracyTriflux Mai_V9_trifulx-m-gen5_MNIST.pyMediumFaster inference, lower resource use
+Both models are Generation 5 (gen5) — the latest version of the Triflux architecture.
 
+What makes Triflux different?
+Most digit recognition models use standard 2D neural networks (flat layers). Triflux uses a 3D neural network architecture, which means:
+
+Data flows through three-dimensional layers
+More complex feature relationships can be captured
+A unique approach to a classic AI benchmark problem
+
+
+Dataset
+Trained on MNIST — 70,000 handwritten digit images (0–9), the standard benchmark for digit recognition.
+
+Training set: 60,000 images
+Test set: 10,000 images
+Accuracy: ~99%
+
+
+Getting Started
 Requirements
-Python 3.9+
-PyTorch
-TensorFlow (for MNIST dataset)
-scikit-learn
-NumPy
+bashpip install -r requirements.txt
+Run the XL model
+bashpython ai_V9_trifulx-xl-gen5_MNIST.py
+Run the Medium model
+bashpython ai_V9_trifulx-m-gen5_MNIST.py
 
-Install dependencies:
+Project Structure
+├── ai_V9_trifulx-xl-gen5_MNIST.py   # Triflux XL model
+├── ai_V9_trifulx-m-gen5_MNIST.py    # Triflux Medium model
+└── README.md
 
-pip install torch tensorflow scikit-learn numpy
-Running the AI
-
-Example scripts:
-
-ai_V9_trifulx-xl-gen5_MNIST.py
-ai_V9_trifulx-m-gen5_MNIST.py
-
-Run:
-
-py -3.11 ai_V9_trifulx_gen1_MNIST.py
-
-Script will:
-
-Load MNIST dataset
-Standardize data
-Build XY dual-axis MLP
-Train with adaptive LR + dropout
-Save best model as best_xy_model.pt
-Notes
-Batch size: 1024
-Epochs: 20000 (adjustable)
-Streams: Y (rows), X (columns) → 256-dim each → merged
-Merger MLP: 256×2 → [256, 256, 256] → 10 classes
-Adaptive LR: LR_START * (1 - test_acc)^LR_EXPONENT
-Adaptive dropout: scaled by (1 - train_acc)^DROPOUT_EXPONENT, capped at 0.9
-Best model: automatically saved during training
+License
+This project is open source. Feel free to use, modify, and build on it.
