@@ -36,3 +36,4 @@ Project Structure
 
 License
 This project is open source. Feel free to use, modify, and build on it.
+"the ai was med weht ai"
