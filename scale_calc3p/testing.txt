@@ -1,0 +1,89 @@
+KeyboardInterrupt
+PS C:\Users\anmal\Desktop\ai> py -3.12 scale_calc3p.py
+=== 3-POINT VALIDATION AI CALCULATOR ===
+
+--- Step 1: Input Baseline Data ---
+Enter Baseline Epoch 1 (e.g., 100): 100
+Enter Test Accuracy at Baseline Epoch 1 (%): 89.943
+Enter Peak Epoch 2 (e.g., 200): 200
+Enter Test Accuracy at Peak Epoch 2 (%): 90.419
+
+--- Step 2: Input Validation & Target Goals ---
+Enter Validation Epoch (between E1 and E2, e.g., 150): 150
+Enter ACTUAL Accuracy at Validation Epoch (%): 90.300
+Enter the Future Epoch you want to predict (e.g., 250): 300
+
+[Calculated] Base Progress Bit: +0.47600%
+
+--- VALIDATION RESULTS ---
+Predicted Acc at Epoch 150: 90.260%
+Actual Acc at Epoch 150:    90.300%
+Calculated Margin of Error: +/- 0.040%
+
+--- FINAL PROJECTION RESULTS ---
+Predicted Test Accuracy at Epoch 300: 90.736%
+Confidence Range: 90.697% to 90.776%
+(Range calculated using your 3-point validation margin!)
+PS C:\Users\anmal\Desktop\ai> py -3.12 scale_calc3p.py
+=== 3-POINT VALIDATION AI CALCULATOR ===
+
+--- Step 1: Input Baseline Data ---
+Enter Baseline Epoch 1 (e.g., 100): 91.950
+Enter Test Accuracy at Baseline Epoch 1 (%): Traceback (most recent call last):
+  File "C:\Users\anmal\Desktop\ai\scale_calc3p.py", line 66, in <module>
+    calculate_with_validation()
+  File "C:\Users\anmal\Desktop\ai\scale_calc3p.py", line 9, in calculate_with_validation
+    v1 = float(input("Enter Test Accuracy at Baseline Epoch 1 (%): "))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+PS C:\Users\anmal\Desktop\ai> py -3.12 scale_calc3p.py
+=== 3-POINT VALIDATION AI CALCULATOR ===
+
+--- Step 1: Input Baseline Data ---
+Enter Baseline Epoch 1 (e.g., 100): 100
+Enter Test Accuracy at Baseline Epoch 1 (%): 91.950
+Enter Peak Epoch 2 (e.g., 200): 200
+Enter Test Accuracy at Peak Epoch 2 (%): 92.160
+
+--- Step 2: Input Validation & Target Goals ---
+Enter Validation Epoch (between E1 and E2, e.g., 150): 150
+Enter ACTUAL Accuracy at Validation Epoch (%): 91.990
+Enter the Future Epoch you want to predict (e.g., 250): 250
+
+[Calculated] Base Progress Bit: +0.21000%
+
+--- VALIDATION RESULTS ---
+Predicted Acc at Epoch 150: 92.090%
+Actual Acc at Epoch 150:    91.990%
+Calculated Margin of Error: +/- 0.100%
+
+--- FINAL PROJECTION RESULTS ---
+Predicted Test Accuracy at Epoch 250: 92.244%
+Confidence Range: 92.144% to 92.344%
+(Range calculated using your 3-point validation margin!)
+PS C:\Users\anmal\Desktop\ai> py -3.12 scale_calc3p.py
+=== 3-POINT VALIDATION AI CALCULATOR ===
+
+--- Step 1: Input Baseline Data ---
+Enter Baseline Epoch 1 (e.g., 100): 100
+Enter Test Accuracy at Baseline Epoch 1 (%): 91.950
+Enter Peak Epoch 2 (e.g., 200): 250
+Enter Test Accuracy at Peak Epoch 2 (%): 92.280
+
+--- Step 2: Input Validation & Target Goals ---
+Enter Validation Epoch (between E1 and E2, e.g., 150): 150
+Enter ACTUAL Accuracy at Validation Epoch (%): 91.990
+Enter the Future Epoch you want to predict (e.g., 250): 25000
+
+[Calculated] Base Progress Bit: +0.27500%
+
+--- VALIDATION RESULTS ---
+Predicted Acc at Epoch 150: 92.133%
+Actual Acc at Epoch 150:    91.990%
+Calculated Margin of Error: +/- 0.143%
+
+--- FINAL PROJECTION RESULTS ---
+Predicted Test Accuracy at Epoch 25000: 92.825%
+Confidence Range: 92.681% to 92.968%
+(Range calculated using your 3-point validation margin!)
+PS C:\Users\anmal\Desktop\ai>

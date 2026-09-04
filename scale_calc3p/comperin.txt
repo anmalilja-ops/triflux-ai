@@ -1,0 +1,118 @@
+PS C:\Users\anmal\Desktop\ai\best ai\gen10 fasione  miniset - Copy> py -3.12 Gen_10-v2-93%+.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1788544237.260885   11704 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1788544239.107074   11704 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+Using device: cuda
+
+Dataset : Fashion-MNIST
+Train   : 60,000 samples
+Test    : 10,000 samples
+
+Gen 10 Architecture (Spatial Order Preserved):
+  Y-stream (rows)  : 28 -> [256, 126] -> 128  (flattened to 3584D map)
+  X-stream (cols)  : 28 -> [256, 126] -> 128  (flattened to 3584D map)
+  3D stack         : concat [3584 + 3584] = 7168D structural input
+  Merger           : 7168 -> [1024, 512, 256] -> 10
+
+Total trainable parameters: 8,116,990
+
+Training Gen 10 XY Dual-Axis Net (Spatial Order + AdamW)...
+
+    1 | train: 83.867% | test : 86.610% (best: 86.610%) | LR: 0.000198 | Drop: 0.010 | time: 0.78s
+    2 | train: 89.703% | test : 88.520% (best: 88.520%) | LR: 0.000166 | Drop: 0.010 | time: 0.53s
+    3 | train: 90.542% | test : 89.000% (best: 89.000%) | LR: 0.000158 | Drop: 0.010 | time: 0.52s
+    4 | train: 91.027% | test : 89.510% (best: 89.510%) | LR: 0.000150 | Drop: 0.053 | time: 0.52s
+    5 | train: 91.377% | test : 89.690% (best: 89.690%) | LR: 0.000147 | Drop: 0.053 | time: 0.53s
+    6 | train: 91.910% | test : 89.760% (best: 89.760%) | LR: 0.000146 | Drop: 0.053 | time: 0.52s
+    7 | train: 92.358% | test : 90.230% (best: 90.230%) | LR: 0.000138 | Drop: 0.053 | time: 0.52s
+    8 | train: 92.673% | test : 90.380% (best: 90.380%) | LR: 0.000135 | Drop: 0.097 | time: 0.53s
+    9 | train: 92.842% | test : 90.390% (best: 90.390%) | LR: 0.000135 | Drop: 0.097 | time: 0.52s
+   10 | train: 93.298% | test : 90.440% (best: 90.440%) | LR: 0.000134 | Drop: 0.097 | time: 0.52s
+   11 | train: 93.530% | test : 90.660% (best: 90.660%) | LR: 0.000131 | Drop: 0.097 | time: 0.52s
+   12 | train: 93.903% | test : 90.770% (best: 90.770%) | LR: 0.000129 | Drop: 0.145 | time: 0.54s
+   13 | train: 93.603% | test : 90.860% (best: 90.860%) | LR: 0.000128 | Drop: 0.145 | time: 0.52s
+   14 | train: 93.993% | test : 90.910% (best: 90.910%) | LR: 0.000127 | Drop: 0.145 | time: 0.53s
+   17 | train: 94.202% | test : 90.940% (best: 90.940%) | LR: 0.000126 | Drop: 0.193 | time: 0.54s
+   18 | train: 94.487% | test : 91.240% (best: 91.240%) | LR: 0.000122 | Drop: 0.193 | time: 0.54s
+   23 | train: 94.882% | test : 91.220% (best: 91.240%) | LR: 0.000122 | Drop: 0.235 | time: 0.50s
+   25 | train: 94.810% | test : 91.180% (best: 91.240%) | LR: 0.000123 | Drop: 0.267 | time: 0.50s
+   26 | train: 94.955% | test : 91.190% (best: 91.240%) | LR: 0.000122 | Drop: 0.267 | time: 0.50s
+   27 | train: 95.217% | test : 91.190% (best: 91.240%) | LR: 0.000122 | Drop: 0.267 | time: 0.50s
+   28 | train: 95.238% | test : 91.270% (best: 91.270%) | LR: 0.000121 | Drop: 0.297 | time: 0.54s
+   29 | train: 94.928% | test : 91.460% (best: 91.460%) | LR: 0.000118 | Drop: 0.297 | time: 0.54s
+   34 | train: 95.118% | test : 91.460% (best: 91.460%) | LR: 0.000118 | Drop: 0.323 | time: 0.50s
+   35 | train: 95.358% | test : 91.420% (best: 91.460%) | LR: 0.000119 | Drop: 0.323 | time: 0.51s
+   39 | train: 95.392% | test : 91.390% (best: 91.460%) | LR: 0.000119 | Drop: 0.346 | time: 0.50s
+   40 | train: 95.548% | test : 91.440% (best: 91.460%) | LR: 0.000118 | Drop: 0.364 | time: 0.50s
+   41 | train: 95.282% | test : 91.460% (best: 91.460%) | LR: 0.000118 | Drop: 0.364 | time: 0.50s
+   42 | train: 95.455% | test : 91.550% (best: 91.550%) | LR: 0.000117 | Drop: 0.364 | time: 0.55s
+   43 | train: 95.353% | test : 91.530% (best: 91.550%) | LR: 0.000117 | Drop: 0.364 | time: 0.51s
+   44 | train: 95.608% | test : 91.490% (best: 91.550%) | LR: 0.000118 | Drop: 0.379 | time: 0.50s
+   50 | train: 95.485% | test : 91.560% (best: 91.560%) | LR: 0.000116 | Drop: 0.396 | time: 0.54s
+   53 | train: 95.572% | test : 91.680% (best: 91.680%) | LR: 0.000115 | Drop: 0.409 | time: 0.54s
+   54 | train: 95.592% | test : 91.580% (best: 91.680%) | LR: 0.000116 | Drop: 0.409 | time: 0.49s
+   61 | train: 95.755% | test : 91.740% (best: 91.740%) | LR: 0.000114 | Drop: 0.425 | time: 0.53s
+   66 | train: 95.783% | test : 91.720% (best: 91.740%) | LR: 0.000114 | Drop: 0.436 | time: 0.50s
+   68 | train: 95.972% | test : 91.780% (best: 91.780%) | LR: 0.000113 | Drop: 0.445 | time: 0.53s
+   70 | train: 95.842% | test : 91.720% (best: 91.780%) | LR: 0.000114 | Drop: 0.445 | time: 0.51s
+   76 | train: 96.052% | test : 91.840% (best: 91.840%) | LR: 0.000112 | Drop: 0.459 | time: 0.54s
+   78 | train: 95.973% | test : 91.760% (best: 91.840%) | LR: 0.000113 | Drop: 0.459 | time: 0.50s
+   79 | train: 95.942% | test : 91.770% (best: 91.840%) | LR: 0.000113 | Drop: 0.459 | time: 0.50s
+   82 | train: 96.090% | test : 91.950% (best: 91.950%) | LR: 0.000110 | Drop: 0.465 | time: 0.53s
+  100 | train: 96.265% | test : 91.700% (best: 91.950%) | LR: 0.000114 | Drop: 0.496 | time: 0.50s
+  104 | train: 96.108% | test : 91.860% (best: 91.950%) | LR: 0.000112 | Drop: 0.495 | time: 0.50s
+  128 | train: 96.337% | test : 91.900% (best: 91.950%) | LR: 0.000111 | Drop: 0.522 | time: 0.49s
+  135 | train: 96.528% | test : 91.910% (best: 91.950%) | LR: 0.000111 | Drop: 0.526 | time: 0.50s
+  136 | train: 96.498% | test : 91.990% (best: 91.990%) | LR: 0.000110 | Drop: 0.534 | time: 0.53s
+  138 | train: 96.203% | test : 91.900% (best: 91.990%) | LR: 0.000111 | Drop: 0.534 | time: 0.48s
+  139 | train: 96.423% | test : 91.970% (best: 91.990%) | LR: 0.000110 | Drop: 0.534 | time: 0.49s
+  140 | train: 96.340% | test : 91.920% (best: 91.990%) | LR: 0.000111 | Drop: 0.533 | time: 0.48s
+  142 | train: 96.385% | test : 91.930% (best: 91.990%) | LR: 0.000111 | Drop: 0.533 | time: 0.48s
+  144 | train: 96.630% | test : 91.920% (best: 91.990%) | LR: 0.000111 | Drop: 0.546 | time: 0.48s
+  147 | train: 96.357% | test : 91.910% (best: 91.990%) | LR: 0.000111 | Drop: 0.546 | time: 0.47s
+  149 | train: 96.455% | test : 91.910% (best: 91.990%) | LR: 0.000111 | Drop: 0.543 | time: 0.47s
+  150 | train: 96.448% | test : 91.980% (best: 91.990%) | LR: 0.000110 | Drop: 0.543 | time: 0.48s
+  151 | train: 96.473% | test : 92.020% (best: 92.020%) | LR: 0.000109 | Drop: 0.543 | time: 0.51s
+  152 | train: 96.498% | test : 91.960% (best: 92.020%) | LR: 0.000110 | Drop: 0.547 | time: 0.48s
+  155 | train: 96.522% | test : 91.940% (best: 92.020%) | LR: 0.000110 | Drop: 0.547 | time: 0.48s
+  157 | train: 96.365% | test : 91.940% (best: 92.020%) | LR: 0.000110 | Drop: 0.554 | time: 0.48s
+  159 | train: 96.407% | test : 92.080% (best: 92.080%) | LR: 0.000108 | Drop: 0.554 | time: 0.52s
+  163 | train: 96.478% | test : 92.020% (best: 92.080%) | LR: 0.000109 | Drop: 0.553 | time: 0.48s
+  164 | train: 96.430% | test : 92.050% (best: 92.080%) | LR: 0.000109 | Drop: 0.551 | time: 0.48s
+  168 | train: 96.720% | test : 92.030% (best: 92.080%) | LR: 0.000109 | Drop: 0.564 | time: 0.50s
+  182 | train: 96.665% | test : 92.060% (best: 92.080%) | LR: 0.000109 | Drop: 0.561 | time: 0.50s
+  183 | train: 96.607% | test : 92.010% (best: 92.080%) | LR: 0.000109 | Drop: 0.561 | time: 0.50s
+  184 | train: 96.557% | test : 92.060% (best: 92.080%) | LR: 0.000109 | Drop: 0.564 | time: 0.50s
+  185 | train: 96.570% | test : 91.980% (best: 92.080%) | LR: 0.000110 | Drop: 0.564 | time: 0.50s
+  188 | train: 96.758% | test : 92.000% (best: 92.080%) | LR: 0.000110 | Drop: 0.576 | time: 0.50s
+  189 | train: 96.500% | test : 91.980% (best: 92.080%) | LR: 0.000110 | Drop: 0.576 | time: 0.50s
+  191 | train: 96.417% | test : 92.120% (best: 92.120%) | LR: 0.000108 | Drop: 0.576 | time: 0.54s
+  192 | train: 96.492% | test : 92.050% (best: 92.120%) | LR: 0.000109 | Drop: 0.571 | time: 0.50s
+  193 | train: 96.647% | test : 92.150% (best: 92.150%) | LR: 0.000107 | Drop: 0.571 | time: 0.54s
+  194 | train: 96.635% | test : 92.070% (best: 92.150%) | LR: 0.000108 | Drop: 0.571 | time: 0.50s
+  197 | train: 96.593% | test : 92.050% (best: 92.150%) | LR: 0.000109 | Drop: 0.572 | time: 0.49s
+  199 | train: 96.742% | test : 92.160% (best: 92.160%) | LR: 0.000107 | Drop: 0.572 | time: 0.53s
+  200 | train: 96.620% | test : 92.050% (best: 92.160%) | LR: 0.000109 | Drop: 0.574 | time: 0.48s
+  203 | train: 96.613% | test : 92.110% (best: 92.160%) | LR: 0.000108 | Drop: 0.574 | time: 0.48s
+  206 | train: 96.572% | test : 92.150% (best: 92.160%) | LR: 0.000107 | Drop: 0.579 | time: 0.48s
+  210 | train: 96.530% | test : 92.060% (best: 92.160%) | LR: 0.000109 | Drop: 0.580 | time: 0.48s
+  217 | train: 96.618% | test : 92.160% (best: 92.160%) | LR: 0.000107 | Drop: 0.586 | time: 0.48s
+  222 | train: 96.627% | test : 92.130% (best: 92.160%) | LR: 0.000107 | Drop: 0.585 | time: 0.48s
+  223 | train: 96.542% | test : 92.100% (best: 92.160%) | LR: 0.000108 | Drop: 0.585 | time: 0.48s
+  224 | train: 96.805% | test : 92.130% (best: 92.160%) | LR: 0.000107 | Drop: 0.594 | time: 0.48s
+  225 | train: 96.537% | test : 92.140% (best: 92.160%) | LR: 0.000107 | Drop: 0.594 | time: 0.48s
+  226 | train: 96.492% | test : 92.100% (best: 92.160%) | LR: 0.000108 | Drop: 0.594 | time: 0.48s
+  230 | train: 96.772% | test : 92.230% (best: 92.230%) | LR: 0.000106 | Drop: 0.583 | time: 0.53s
+  240 | train: 96.798% | test : 92.190% (best: 92.230%) | LR: 0.000107 | Drop: 0.599 | time: 0.48s
+  244 | train: 96.652% | test : 92.280% (best: 92.280%) | LR: 0.000105 | Drop: 0.597 | time: 0.52s
+  249 | train: 96.750% | test : 92.240% (best: 92.280%) | LR: 0.000106 | Drop: 0.601 | time: 0.48s
+  250 | train: 96.555% | test : 92.250% (best: 92.280%) | LR: 0.000106 | Drop: 0.601 | time: 0.48s
+
+--- Gen 10 Summary ---
+Best test accuracy : 92.28%
+Breaks 92% wall?   : YES!
+Total parameters   : 8,116,990
+
+PS C:\Users\anmal\Desktop\ai\best ai\gen10 fasione  miniset - Copy>
