@@ -1,0 +1,68 @@
+  [💤 ENTERING REM SLEEP] Epoch 11493 | Baker is scrambling real memories to dream...
+11493 | [💤 Memory Dreaming] consolidation phase... | time: 0.07s
+11494 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11495 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11496 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+  [☀️ WAKING UP] Epoch 11497 | Resuming normal training with refreshed weights.
+
+11497 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11498 | train: 96.108% | test : 93.570% (best: 94.420%) | gap: 2.538% | LR: 0.000085 | Drop: 0.675 | Stalled: 1 | time: 1.00s
+11499 | train: 97.093% | test : 93.830% (best: 94.420%) | gap: 3.263% | LR: 0.000081 | Drop: 0.675 | Stalled: 2 | time: 0.99s
+11500 | train: 96.089% | test : 93.700% (best: 94.420%) | gap: 2.389% | LR: 0.000083 | Drop: 0.675 | Stalled: 3 | time: 0.98s
+11501 | train: 96.407% | test : 93.930% (best: 94.420%) | gap: 2.477% | LR: 0.000080 | Drop: 0.675 | Stalled: 4 | time: 0.99s
+11502 | train: 96.257% | test : 94.000% (best: 94.420%) | gap: 2.258% | LR: 0.000079 | Drop: 0.675 | Stalled: 5 | time: 1.01s
+11503 | train: 97.022% | test : 94.020% (best: 94.420%) | gap: 3.003% | LR: 0.000078 | Drop: 0.675 | Stalled: 6 | time: 1.01s
+11504 | train: 97.037% | test : 93.860% (best: 94.420%) | gap: 3.177% | LR: 0.000081 | Drop: 0.677 | Stalled: 7 | time: 1.01s
+11505 | train: 96.258% | test : 94.040% (best: 94.420%) | gap: 2.218% | LR: 0.000078 | Drop: 0.677 | Stalled: 8 | time: 1.02s
+11506 | train: 96.127% | test : 93.640% (best: 94.420%) | gap: 2.487% | LR: 0.000084 | Drop: 0.677 | Stalled: 9 | time: 1.01s
+11507 | train: 96.005% | test : 93.460% (best: 94.420%) | gap: 2.545% | LR: 0.000087 | Drop: 0.677 | Stalled: 10 | time: 1.06s
+11508 | train: 98.047% | test : 94.220% (best: 94.420%) | gap: 3.827% | LR: 0.000075 | Drop: 0.677 | Stalled: 11 | time: 1.00s
+11509 | train: 97.096% | test : 93.950% (best: 94.420%) | gap: 3.146% | LR: 0.000079 | Drop: 0.677 | Stalled: 12 | time: 1.01s
+11510 | train: 96.107% | test : 93.520% (best: 94.420%) | gap: 2.587% | LR: 0.000086 | Drop: 0.677 | Stalled: 13 | time: 1.04s
+11511 | train: 98.141% | test : 94.240% (best: 94.420%) | gap: 3.901% | LR: 0.000075 | Drop: 0.677 | Stalled: 14 | time: 1.00s
+11512 | train: 96.188% | test : 93.730% (best: 94.420%) | gap: 2.458% | LR: 0.000083 | Drop: 0.634 | Stalled: 15 | time: 1.00s
+
+  [💤 ENTERING REM SLEEP] Epoch 11513 | Baker is scrambling real memories to dream...
+11513 | [💤 Memory Dreaming] consolidation phase... | time: 0.07s
+11514 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11515 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11516 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+  [☀️ WAKING UP] Epoch 11517 | Resuming normal training with refreshed weights.
+
+11517 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11518 | train: 97.082% | test : 93.720% (best: 94.420%) | gap: 3.362% | LR: 0.000083 | Drop: 0.634 | Stalled: 1 | time: 1.01s
+11519 | train: 98.857% | test : 94.260% (best: 94.420%) | gap: 4.597% | LR: 0.000075 | Drop: 0.634 | Stalled: 2 | time: 0.99s
+11520 | train: 98.905% | test : 94.270% (best: 94.420%) | gap: 4.635% | LR: 0.000075 | Drop: 0.700 | Stalled: 3 | time: 0.99s
+11521 | train: 95.540% | test : 93.950% (best: 94.420%) | gap: 1.590% | LR: 0.000079 | Drop: 0.700 | Stalled: 4 | time: 0.99s
+11522 | train: 95.451% | test : 93.540% (best: 94.420%) | gap: 1.911% | LR: 0.000086 | Drop: 0.700 | Stalled: 5 | time: 0.99s
+11523 | train: 96.303% | test : 93.900% (best: 94.420%) | gap: 2.403% | LR: 0.000080 | Drop: 0.700 | Stalled: 6 | time: 0.99s
+11524 | train: 97.481% | test : 94.140% (best: 94.420%) | gap: 3.341% | LR: 0.000077 | Drop: 0.700 | Stalled: 7 | time: 1.00s
+11525 | train: 96.379% | test : 93.680% (best: 94.420%) | gap: 2.699% | LR: 0.000084 | Drop: 0.700 | Stalled: 8 | time: 1.00s
+11526 | train: 97.481% | test : 94.160% (best: 94.420%) | gap: 3.321% | LR: 0.000076 | Drop: 0.700 | Stalled: 9 | time: 1.03s
+11527 | train: 96.479% | test : 93.780% (best: 94.420%) | gap: 2.699% | LR: 0.000082 | Drop: 0.700 | Stalled: 10 | time: 1.03s
+11528 | train: 95.431% | test : 93.770% (best: 94.420%) | gap: 1.661% | LR: 0.000082 | Drop: 0.627 | Stalled: 11 | time: 1.02s
+11529 | train: 98.882% | test : 94.280% (best: 94.420%) | gap: 4.602% | LR: 0.000074 | Drop: 0.627 | Stalled: 12 | time: 1.04s
+11530 | train: 98.092% | test : 94.030% (best: 94.420%) | gap: 4.062% | LR: 0.000078 | Drop: 0.627 | Stalled: 13 | time: 1.04s
+11531 | train: 98.008% | test : 94.100% (best: 94.420%) | gap: 3.908% | LR: 0.000077 | Drop: 0.627 | Stalled: 14 | time: 1.03s
+11532 | train: 98.171% | test : 94.400% (best: 94.420%) | gap: 3.771% | LR: 0.000073 | Drop: 0.627 | Stalled: 15 | time: 1.01s
+
+  [💤 ENTERING REM SLEEP] Epoch 11533 | Baker is scrambling real memories to dream...
+11533 | [💤 Memory Dreaming] consolidation phase... | time: 0.07s
+11534 | [💤 Memory Dreaming] consolidation phase... | time: 0.09s
+11535 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11536 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+  [☀️ WAKING UP] Epoch 11537 | Resuming normal training with refreshed weights.
+
+11537 | [💤 Memory Dreaming] consolidation phase... | time: 0.08s
+11538 | train: 97.342% | test : 94.070% (best: 94.420%) | gap: 3.272% | LR: 0.000078 | Drop: 0.627 | Stalled: 1 | time: 1.00s
+11539 | train: 97.335% | test : 93.730% (best: 94.420%) | gap: 3.605% | LR: 0.000083 | Drop: 0.627 | Stalled: 2 | time: 1.00s
+11540 | train: 98.019% | test : 94.230% (best: 94.420%) | gap: 3.789% | LR: 0.000075 | Drop: 0.627 | Stalled: 3 | time: 1.00s
+11541 | train: 97.287% | test : 94.050% (best: 94.420%) | gap: 3.237% | LR: 0.000078 | Drop: 0.627 | Stalled: 4 | time: 1.00s
+11542 | train: 97.259% | test : 93.710% (best: 94.420%) | gap: 3.549% | LR: 0.000083 | Drop: 0.627 | Stalled: 5 | time: 1.00s
+11543 | train: 97.282% | test : 94.090% (best: 94.420%) | gap: 3.192% | LR: 0.000077 | Drop: 0.627 | Stalled: 6 | time: 0.99s
+11544 | train: 98.098% | test : 93.930% (best: 94.420%) | gap: 4.167% | LR: 0.000080 | Drop: 0.695 | Stalled: 7 | time: 1.00s
+Traceback (most recent call last):
+  File "C:\Users\anmal\Desktop\ai\SleepingBeauty.ai\sleeping_beauty_testv4.py", line 326, in <module>
+  File "C:\Users\anmal\Desktop\ai\SleepingBeauty.ai\sleeping_beauty_testv4.py", line 252, in train_one_epoch
+KeyboardInterrupt
+PS C:\Users\anmal\Desktop\ai\SleepingBeauty.ai>
